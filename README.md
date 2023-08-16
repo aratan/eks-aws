@@ -18,5 +18,10 @@ tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp && rm eksctl_$PLATFORM.tar.gz
 sudo mv /tmp/eksctl /usr/local/bin
 
 
+## Uso
 
 eksctl create cluster -f cluster.yaml
+
+eksctl delete cluster --region=us-east-1 --name=eks-tutorial
+
+eksctl get cluster
